@@ -1,4 +1,5 @@
 @import "vars";
+
 #main-visual {
   overflow: hidden;
   .list {
@@ -271,19 +272,24 @@
       p {
         color: #c0b09d;
         font-size: $h2;
+        vertical-align: middle;
         &:after {
           content: "";
-          display: flex;
-          width: 300px;
+          display: inline-block;
+          width: 200px;
           height: 2px;
+          margin-left: 20px;
           background-color: #c0b09d;
+          vertical-align: middle;
         }
         &:before {
           content: "";
-          display: flex;
-          width: 300px;
+          display: inline-block;
+          width: 200px;
           height: 2px;
+          margin-right: 20px;
           background-color: #c0b09d;
+          vertical-align: middle;
         }
 
         padding-top: 200px;
@@ -344,8 +350,8 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
-
   .txt {
     min-height: 900px;
     display: flex;
@@ -404,18 +410,35 @@
   }
   .banner {
     overflow: hidden;
-    width: 50%;
+    width: 600px;
+    height: 500px;
+    position: relative;
+
     img {
       max-width: 600px;
     }
   }
-  .since {
+  .pagination {
     position: absolute;
-    font-size: 350px;
-    font-weight: 300;
-    font-family: "Noto Serif KR";
-    bottom: 0px;
-    right: -2%;
-    color: #eff3f3;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    .swiper-pagination-bullet {
+      width: 100px;
+      height: 7px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 0;
+      opacity: 1;
+      &-active {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .fraction-pagination {
+    width: auto;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
   }
 }

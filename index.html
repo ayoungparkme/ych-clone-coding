@@ -29,6 +29,7 @@
     <script src="https://kit.fontawesome.com/382c9db2df.js" crossorigin="anonymous"></script>
   </head>
   <!-- head end -->
+
   <body>
     <header id="header">
       <h1 class="logo">
@@ -131,7 +132,6 @@
     <!-- header end -->
 
     <div id="main-visual">
-      <!-- Slides -->
       <ul class="swiper-wrapper list">
         <li class="swiper-slide visual01"></li>
         <li class="swiper-slide visual02"></li>
@@ -359,10 +359,36 @@
               <img src="images/main/service-4.jpg" alt="" />
             </li>
           </ul>
+          <div class="pagination"></div>
+          <div class="fraction-pagination"></div>
         </div>
       </div>
     </section>
     <!-- service design end -->
+
+    <section id="youtube" class="contents-box">
+      <div class="container">
+        <div class="sect-title">
+          <p>염창환 의학박사 TV</p>
+          <h2>YouTube</h2>
+        </div>
+        <div class="container-box">
+          <div class="txt">
+            <div class="txt-box">
+              <div class="desc">
+                <p class="main">암환우와 보호자를 위한 의학 채널 유튜브</p>
+                <p class="sub">
+                  앎으로 암을 치료하는 채널 염창환 의학박사 TV를 통해 환자와 소통하고 있습니다.<br />
+                  염창환병원이 그동안 연구해 온 암을 이기는 치료법부터 면역치료, 항암치료 그리고 항암음식까지 환자와 보호자가 궁금해하였던<br />
+                  암과 관련된 다양한 이야기들을 의사에게 직접 확인해보실 수 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- youtube end -->
   </body>
 
   <script>
@@ -380,10 +406,15 @@
     });
 
     const swiper03 = new Swiper("#service-design .banner", {
-      direction: "vertical",
+      loop: true,
+      navigation: {
+        nextEl: "#service-design .banner .btn-next",
+        prevEl: "#service-design .banner .btn-prev",
+      },
       pagination: {
         el: ".pagination",
         type: "bullets",
+        clickable: true,
       },
     });
   </script>

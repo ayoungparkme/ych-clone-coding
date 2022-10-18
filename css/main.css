@@ -264,21 +264,26 @@
 #healthy-food .container .sect-title p {
   color: #c0b09d;
   font-size: 28px;
+  vertical-align: middle;
   padding-top: 200px;
 }
 #healthy-food .container .sect-title p:after {
   content: "";
-  display: flex;
-  width: 300px;
+  display: inline-block;
+  width: 200px;
   height: 2px;
+  margin-left: 20px;
   background-color: #c0b09d;
+  vertical-align: middle;
 }
 #healthy-food .container .sect-title p:before {
   content: "";
-  display: flex;
-  width: 300px;
+  display: inline-block;
+  width: 200px;
   height: 2px;
+  margin-right: 20px;
   background-color: #c0b09d;
+  vertical-align: middle;
 }
 #healthy-food .container .sect-title h2 {
   font-size: 108px;
@@ -328,6 +333,7 @@
 #service-design .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 #service-design .txt {
   min-height: 900px;
@@ -384,17 +390,33 @@
 }
 #service-design .banner {
   overflow: hidden;
-  width: 50%;
+  width: 600px;
+  height: 500px;
+  position: relative;
 }
 #service-design .banner img {
   max-width: 600px;
 }
-#service-design .since {
+#service-design .pagination {
   position: absolute;
-  font-size: 350px;
-  font-weight: 300;
-  font-family: "Noto Serif KR";
-  bottom: 0px;
-  right: -2%;
-  color: #eff3f3;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+}
+#service-design .pagination .swiper-pagination-bullet {
+  width: 100px;
+  height: 7px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  opacity: 1;
+}
+#service-design .pagination .swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#service-design .fraction-pagination {
+  width: auto;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
 }
