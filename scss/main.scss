@@ -559,9 +559,11 @@
     }
     .list {
       width: 60.5%;
+
       ul {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 100px;
         li {
           width: calc(33.33% - 20px);
           margin: 10px;

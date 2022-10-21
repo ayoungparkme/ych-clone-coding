@@ -537,6 +537,7 @@
 #partner .container .list ul {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 100px;
 }
 #partner .container .list ul li {
   width: calc(33.33% - 20px);
