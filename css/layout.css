@@ -130,5 +130,81 @@ footer .container {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
+}
+footer .container .info {
   display: flex;
+  justify-content: space-between;
+}
+footer .container .info .num {
+  width: 40%;
+  padding-right: 100px;
+}
+footer .container .info .num strong {
+  font-size: 25px;
+  font-family: "Noto Serif KR";
+  color: #c0b09d;
+  position: relative;
+  padding-right: 310px;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 10px;
+}
+footer .container .info .num .tel {
+  display: block;
+  font-size: 65px;
+  line-height: 110px;
+  margin-top: 10px;
+  font-family: "Noto Serif KR";
+  font-weight: 400;
+  color: #ffffff;
+}
+footer .container .info .num .txt {
+  margin-top: 30px;
+  font-family: "Noto Serif KR";
+  font-size: 25px;
+  color: #ffffff;
+}
+footer .container .info .num span {
+  font-size: 16px;
+  margin-top: 16px;
+  color: #fff;
+  display: block;
+  font-weight: 300;
+}
+footer .container .info .time {
+  width: 55%;
+}
+footer .container .info .time .time-box {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .info .time .time-box li {
+  padding: 60px 65px 60px;
+  background: #313337;
+  text-align: center;
+  color: #fff;
+}
+footer .container .info .time .time-box li i {
+  font-size: 40px;
+  color: #ffffff;
+  display: block;
+}
+footer .container .info .time .time-box li .day {
+  font-size: 14px;
+  margin-top: 21px;
+  font-weight: 300;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+footer .container .info .time .time-box li .open {
+  margin-top: 25px;
+  font-family: "Noto Serif KR";
+  font-size: 25px;
+  white-space: nowrap;
+}
+footer .container .info .time .time-box li .close {
+  margin-top: 10px;
+  color: #fff;
+  display: block;
 }

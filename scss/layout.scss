@@ -135,8 +135,82 @@ footer {
     max-width: 1440px;
     padding: 0 20px;
     margin: 0 auto;
-    display: flex;
-    .txt {
+    .info {
+      display: flex;
+      justify-content: space-between;
+      .num {
+        width: 40%;
+        padding-right: 100px;
+        strong {
+          font-size: 25px;
+          font-family: "Noto Serif KR";
+          color: #c0b09d;
+          position: relative;
+          padding-right: 310px;
+          font-weight: 400;
+          display: inline-block;
+          margin-top: 10px;
+        }
+        .tel {
+          display: block;
+          font-size: 65px;
+          line-height: 110px;
+          margin-top: 10px;
+          font-family: "Noto Serif KR";
+          font-weight: 400;
+          color: #ffffff;
+        }
+        .txt {
+          margin-top: 30px;
+          font-family: "Noto Serif KR";
+          font-size: 25px;
+          color: #ffffff;
+        }
+        span {
+          font-size: 16px;
+          margin-top: 16px;
+          color: #fff;
+          display: block;
+          font-weight: 300;
+        }
+      }
+      .time {
+        width: 55%;
+        .time-box {
+          display: flex;
+          justify-content: space-between;
+          li {
+            padding: 60px 65px 60px;
+            background: #313337;
+            text-align: center;
+            color: #fff;
+            i {
+              font-size: 40px;
+              color: #ffffff;
+              display: block;
+            }
+            .day {
+              font-size: 14px;
+              margin-top: 21px;
+              font-weight: 300;
+              border-bottom: 1px solid #fff;
+              padding-bottom: 0px;
+              display: inline-block;
+            }
+            .open {
+              margin-top: 25px;
+              font-family: "Noto Serif KR";
+              font-size: 25px;
+              white-space: nowrap;
+            }
+            .close {
+              margin-top: 10px;
+              color: #fff;
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 }
