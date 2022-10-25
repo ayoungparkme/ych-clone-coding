@@ -537,6 +537,45 @@
         </div>
       </div>
     </footer>
+    <!-- footer end -->
+
+    <div id="nav" class="show">
+      <ul class="nav-bg">
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-solid fa-capsules"></i><strong class="icon-title">영양제 상담</strong></span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-regular fa-paper-plane"></i><strong class="icon-title">온라인 상담</strong></span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-regular fa-comments"></i><strong class="icon-title">카카오톡 채팅상담</strong></span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-solid fa-phone"></i><strong class="icon-title">전화문의</strong></span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-solid fa-blog"></i><strong class="icon-title">블로그</strong></span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><span class="icon-box"><i class="fa-solid fa-map"></i><strong class="icon-title">오시는길</strong></span></a
+          >
+        </li>
+      </ul>
+      <div class="top-btn-box">
+        <button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+      </div>
+    </div>
   </body>
 
   <script>
@@ -564,6 +603,21 @@
         type: "bullets",
         clickable: true,
       },
+    });
+
+    const btnTop = document.querySelector(".show");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        header.classList.add("on");
+      } else {
+        header.classList.remove("on");
+      }
+      if (window.scrollY > 500) {
+        btnTop.classList.add("on");
+      } else {
+        btnTop.classList.remove("on");
+      }
     });
   </script>
 </html>

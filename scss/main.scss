@@ -588,3 +588,66 @@
     }
   }
 }
+
+#nav {
+  z-index: 1;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.25s ease;
+  &.on {
+    bottom: 50px;
+    transform: scale(1);
+    opacity: 1;
+    .nav-bg {
+      background: #2c9896;
+      width: 100px;
+      border-radius: 55px;
+      padding: 45.5px 20px 42.5px;
+      box-shadow: 2px 1px 25px rgb(0 0 0 / 35%);
+      li {
+        padding-bottom: 50px;
+        a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          i {
+            font-size: 35px;
+            color: rgba(255, 255, 255, 0.3);
+            display: block;
+            text-align: center;
+          }
+          .icon-title {
+            font-size: 13px;
+            font-family: "Noto Serif KR";
+            font-weight: 400;
+            margin: 15px auto 0;
+            color: #fff;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .top-btn-box {
+      margin-top: 17px;
+
+      .top-btn {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 2px 1px 25px rgb(0 0 0 / 15%);
+        font-size: 35px;
+        color: #2c9896;
+        border: inherit;
+      }
+    }
+  }
+}
