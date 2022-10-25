@@ -150,6 +150,17 @@ footer {
           font-weight: 400;
           display: inline-block;
           margin-top: 10px;
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 275px;
+            height: 1.22px;
+            background: #c0b09d;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+          }
         }
         .tel {
           display: block;
@@ -208,6 +219,51 @@ footer {
               color: #fff;
               display: block;
             }
+          }
+        }
+      }
+    }
+    .addr {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .logo-box {
+        .logo {
+          width: 186px;
+          height: 36px;
+        }
+        address {
+          margin-top: 16px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 14px;
+          line-height: 2;
+        }
+      }
+      .sns {
+        .link {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 14;
+          display: flex;
+
+          li {
+            & + li:before {
+              content: "·";
+              display: inline-block;
+              margin: 0 20px;
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+        .icon-box {
+          display: flex;
+          margin-top: 40px;
+          align-items: center;
+          justify-content: end;
+          img {
+            width: 30px;
+            height: 30px;
+            margin-left: 40px;
           }
         }
       }

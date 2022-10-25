@@ -149,6 +149,17 @@ footer .container .info .num strong {
   display: inline-block;
   margin-top: 10px;
 }
+footer .container .info .num strong:after {
+  content: "";
+  display: inline-block;
+  width: 275px;
+  height: 1.22px;
+  background: #c0b09d;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
 footer .container .info .num .tel {
   display: block;
   font-size: 65px;
@@ -207,4 +218,42 @@ footer .container .info .time .time-box li .close {
   margin-top: 10px;
   color: #fff;
   display: block;
+}
+footer .container .addr {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .container .addr .logo-box .logo {
+  width: 186px;
+  height: 36px;
+}
+footer .container .addr .logo-box address {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 2;
+}
+footer .container .addr .sns .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14;
+  display: flex;
+}
+footer .container .addr .sns .link li + li:before {
+  content: "·";
+  display: inline-block;
+  margin: 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .container .addr .sns .icon-box {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: end;
+}
+footer .container .addr .sns .icon-box img {
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
 }
